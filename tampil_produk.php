@@ -190,7 +190,7 @@ $found = !empty($result);
         <div class="overlay" id="overlay"></div>
         <div class="popup" id="popup">
             <div class="popup-content">
-                <p>Data tidak bisa dihapus karena masih terdapat di Detail Penjualan.</p>
+                <p>Produk tidak dapat dihapus. Data penjualan akan jadi tidak konsisten.</p>
             </div>
             <div class="popup-buttons">
                 <button onclick="closePopup()" class="ok-btn">OK</button>
