@@ -14,6 +14,8 @@ include "koneksi.php";
     <style>
         body {
             background-color: #F8F3D9; /* Warna latar belakang utama */
+            padding-top: 100px; /* Padding untuk navbar */
+            font-family: 'Arial', sans-serif; /* Font umum */
         }
         .container {
             max-width: 800px;
@@ -30,7 +32,13 @@ include "koneksi.php";
         }
         .header {
             background-color: #B9B28A; /* Warna latar belakang header */
-            padding: 20px;
+            padding: 29px;
+            position: fixed; /* Navbar tetap di atas */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan pada navbar */ 
         }
         .nav-link {
             color: #EBE5C2; /* Warna teks tautan navigasi */
@@ -94,7 +102,7 @@ include "koneksi.php";
             </div>
 
             <div class="form-group">
-                <label for="Harga">Harga Produk:</label>
+                <label for="Harga">Harga Produk/Pack:</label>
                 <input type="decimal" id="Harga" name="Harga" class="form-control" required>
             </div>
 
